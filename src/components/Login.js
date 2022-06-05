@@ -24,6 +24,10 @@ export default class Login extends Component {
     //alert('A name was submitted: ' + this.state);
     console.log(this.state)
     event.preventDefault();
+    localStorage.setItem('bgcolor', 'red');
+
+    console.log(localStorage.getItem('bgcolor'));
+    
     
   }
   

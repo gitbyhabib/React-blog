@@ -12,6 +12,7 @@ import EditPost from './components/editPost';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Forgetpass from './components/Forgetpass';
+import Svr from './components/Svr';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/signup" component={Signup} /> 
         <Route path="/forgetpass" component={Forgetpass} /> 
         <Footer/>
+        <Svr></Svr>
       </BrowserRouter>
     </div>
   );
