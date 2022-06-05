@@ -6,12 +6,12 @@ export default class Signup extends Component {
     return (
       <div>
 
-<div class="row d-flex justify-content-center mt-5  text-center ">
+<div class="row m-0 d-flex justify-content-center mt-5  text-center ">
 
             <form class='border p-2 rounded'>
             <h4 class='text-center'>Signup Form</h4>
             <div class="form-outline my-4 ">
-                <input type="email" id="loginName" class="form-control" />
+                <input type="name" id="loginName" class="form-control" />
                 <label class="form-label" for="loginName">Username</label>
             </div>
             <div class="form-outline my-4 ">

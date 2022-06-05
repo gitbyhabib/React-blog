@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 
 class Show extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = { post:'', }
 
         this.DeletePost = this.DeletePost.bind(this);
@@ -30,7 +30,7 @@ class Show extends Component {
                                         <Link to={`/edit/${PostData.slug}`} className="dropdown-item">
                                             Edit
                                         </Link> 
-                                        <a className="dropdown-item" onClick={this.DeletePost}>Delete</a>
+                                        <button className="dropdown-item" onClick={this.DeletePost}>Delete</button>
                                     </div>
                                 </div>
                             </div>
@@ -55,8 +55,8 @@ class Show extends Component {
     }
 
     Post(){
-        const slug = this.props.match.params.id;
-        // console.log(slug);
+        let slug = this.props.match.params.id;
+         console.log(slug,'working asap');
         
         axios.get('http://127.0.0.1:8000/api/posts/'+slug)
         .then(res => {

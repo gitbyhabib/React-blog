@@ -43,7 +43,7 @@ class Home extends Component {
     }
 
     getPost(){
-        axios.get('http://localhost:8000/api/posts')
+        axios.get('http://localhost:')
           .then(res => {
               this.setState({
                   post: res.data
