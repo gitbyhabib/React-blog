@@ -59,11 +59,11 @@ class CreatePost extends Component {
         let postData = this.state;
         return ( 
             <div>
-                <div className="container mt-5 mb-5">
+                <div className="container my-5">
                     <h1>Create Post...</h1>
 
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col">
                             <form onSubmit={this.handleSubmit}> 
                                 <div className="form-group">
                                     <label >Title: </label>

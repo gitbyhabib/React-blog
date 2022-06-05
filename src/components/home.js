@@ -18,7 +18,7 @@ class Home extends Component {
                             return ( 
                                 <div className="card mb-3" key={key}>
                                     <div className="card-header">
-                                        by AJay Marathe on {PostData[key].created_at}
+                                       <img class="img-thumbnail rounded-circle" src='./favicon.ico' alt='user img'></img> by AJay Marathe on {PostData[key].created_at}
                                     </div>
                                     <div className="card-body">
                                         <h1> {PostData[key].title}</h1>

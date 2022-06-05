@@ -15,11 +15,11 @@ class Show extends Component {
         let PostData = this.state.post;
         return ( 
             <div>
-                <div className="container mt-5 mb-5">
-                    <div className="col-md-8">
+                <div className="container my-5">
+                    <div className="col w-100">
                         <div className="card">
                             <div className="card-header">
-                                By AJay Marathe on {PostData.created_at}
+                            <img class="img-thumbnail rounded-circle" src='../favicon.ico' alt='user img'></img> By AJay Marathe on {PostData.created_at}
                             </div>
                             <div className="card-body">
                                 <h1>{PostData.title}</h1>
@@ -35,6 +35,10 @@ class Show extends Component {
                                 </div>
                             </div>
                             <div className="card-footer">
+                                <div class="col">
+                                        <i class="fa fa-thumbs-up btn  p-1" aria-hidden="true">100&nbsp;</i>
+                                        <i class="fa fa-thumbs-down btn float-right  p-1" aria-hidden="true">100</i>
+                                </div>
                                 <div className="form-group">
                                     <input className="form-control" placeholder="Leave comment"/>
                                 </div>
